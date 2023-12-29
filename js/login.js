@@ -44,7 +44,7 @@ LoginBtn.addEventListener("click", function () {
         loginPasswordInput.value == Container[i].password &&
         regex.test(loginEmailInput.value) == true
       ) {
-        document.location.href = "./index.html";
+        document.location.href = "./home.html";
         loginedUser.push(Container[i].name);
         localStorage.setItem("login", JSON.stringify(loginedUser)); 
         valid = 1;
